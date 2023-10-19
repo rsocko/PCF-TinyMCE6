@@ -16,3 +16,6 @@ Future updates are intended to add:
 - Read-only and Disabled mode for the control
 - Styles / CSS enablement to allow customization of theme and look & feel
 
+Notes:
+- TinyMCE version 6 and later [no longer support IE 11](https://www.tiny.cloud/docs/tinymce/6/migration-from-5x/#core-changes)
+

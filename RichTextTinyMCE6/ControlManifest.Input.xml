@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="rysock" constructor="RichTextTinyMCE6" version="0.0.1" display-name-key="RichTextTinyMCE6" description-key="RichTextTinyMCE6 description" control-type="standard" >
+  <control namespace="rysock" constructor="RichTextTinyMCE6" version="0.1.23092400" display-name-key="RichTextTinyMCE6" description-key="Rich Text Control using the TinyMCE library" control-type="standard" >
     <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
     If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
     Example1:
@@ -18,7 +18,7 @@
       -->
     </external-service-usage>
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Text" display-name-key="Text" description-key="Rich_Text_html_text_value" of-type="Multiple" usage="bound" required="true" />
     <!--
       Property node's of-type attribute can be of-type-group attribute.
       Example:
