@@ -4,10 +4,10 @@
 /node_modules
 
 # generated directory
-**/generated
+#**/generated
 
 # output directory
-/out
+#/out
 
 # msbuild output directories
 /bin
