@@ -24,9 +24,9 @@ export class RichTextTinyMCE6 implements ComponentFramework.StandardControl<IInp
         //Load TinyMCE library
         this._tinymce = require('tinymce/tinymce');
 		require('tinymce/models/dom');
-		require('tinymce/skins/ui/oxide/skin.min.css');
-		require('tinymce/skins/ui/oxide/content.min.css');
-		require('tinymce/skins/content/default/content.css');
+		//require('tinymce/skins/ui/oxide/skin.min.css');
+		//require('tinymce/skins/ui/oxide/content.min.css');
+		//require('tinymce/skins/content/default/content.css');
 
         //Load Themes and Icons
         //TODO: change to dynamically load themes, icons and plugins based on the input parameters (or just use the default ones)
@@ -134,7 +134,7 @@ export class RichTextTinyMCE6 implements ComponentFramework.StandardControl<IInp
 
 					var editorInstance = this._tinymce.get("text_editor"+this._domId);
 					var activeContainer : HTMLElement = editorInstance.getContainer();
-					var toolbarDiv : any = activeContainer.getElementsByClassName("tox-toolbar-overlord")[0];
+					var toolbarDiv : any = activeContainer.getElementsByClassName("tox-editor-header")[0];
 					toolbarDiv.style.display = "block";
 				});
 
@@ -143,7 +143,7 @@ export class RichTextTinyMCE6 implements ComponentFramework.StandardControl<IInp
 					console.log('blur event triggered');
 					var editorInstance = this._tinymce.get("text_editor"+this._domId);
 					var activeContainer : HTMLElement = editorInstance.getContainer();
-					var toolbarDiv : any = activeContainer.getElementsByClassName("tox-toolbar-overlord")[0];
+					var toolbarDiv : any = activeContainer.getElementsByClassName("tox-editor-header")[0];
 					toolbarDiv.style.display = "none";
 				});
 
@@ -152,7 +152,7 @@ export class RichTextTinyMCE6 implements ComponentFramework.StandardControl<IInp
 					console.log('init event triggered');
 					var editorInstance = this._tinymce.get("text_editor"+this._domId);
 					var activeContainer : HTMLElement = editorInstance.getContainer();
-					var toolbarDiv : any = activeContainer.getElementsByClassName("tox-toolbar-overlord")[0];
+					var toolbarDiv : any = activeContainer.getElementsByClassName("tox-editor-header")[0];
 					toolbarDiv.style.display = "none";
 				});
             }

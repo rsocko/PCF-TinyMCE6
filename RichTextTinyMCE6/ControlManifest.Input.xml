@@ -32,6 +32,9 @@
     -->
     <resources>
       <code path="index.ts" order="1"/>
+      <css path="skins/content/default/content.css" order="1" />
+      <css path="skins/ui/oxide/content.min.css" order="1" />
+      <css path="skins/ui/oxide/skin.min.css" order="1" />
       <!-- UNCOMMENT TO ADD MORE RESOURCES
       <css path="css/RichTextTinyMCE6.css" order="1" />
       <resx path="strings/RichTextTinyMCE6.1033.resx" version="1.0.0" />
