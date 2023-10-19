@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <manifest>
-  <control namespace="rysock" constructor="RichTextTinyMCE6" version="1.0.23101800" display-name-key="RichTextTinyMCE6" description-key="Rich Text Control using the TinyMCE library" control-type="standard" api-version="1.3.6">
+  <control namespace="rysock" constructor="RichTextTinyMCE6" version="1.0.23101900" display-name-key="RichTextTinyMCE6" description-key="Rich Text Control using the TinyMCE library" control-type="standard" api-version="1.3.6">
     <external-service-usage enabled="false"/>
     <property name="Text" display-name-key="Text" description-key="Rich_Text_html_text_value" of-type="Multiple" usage="bound" required="true"/>
     <resources>
