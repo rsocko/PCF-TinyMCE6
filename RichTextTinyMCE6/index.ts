@@ -68,6 +68,8 @@ export class RichTextTinyMCE6 implements ComponentFramework.StandardControl<IInp
 			//REFERENCE: AzureDevOps uses the folloing style in their rich text editor: "Segoe UI VSS (Regular)","Segoe UI","-apple-system",BlinkMacSystemFont,Roboto,"Helvetica Neue",Helvetica,Ubuntu,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
 			//font-size: 14px
 
+			readonly: this._context.mode.isControlDisabled, //todo: make this a property
+
 			//inline: true, //todo: if using inline need to figure out how to show scrollbar / fixed height/width
 			
 			mobile: {
@@ -145,7 +147,7 @@ export class RichTextTinyMCE6 implements ComponentFramework.StandardControl<IInp
 					toolbarDiv.style.display = "none";
 				});
 
-				ed.on('init', (e: any) => {
+				ed.on('PreInit', (e: any) => {
 					//On Init Event (default) hide the toolbar
 					console.log('init event triggered');
 					var editorInstance = this._tinymce.get("text_editor"+this._domId);
